@@ -330,7 +330,7 @@ openBtn.addEventListener("click", () => {
       const sign = document.createElement("div");
       sign.className = "signature";
       sign.textContent =
-        "— Gửi cậu, từ một người thương mến 💗";
+        "— Gửi em, Người Già của em 💗";
 
       letter.appendChild(sign);
     }
