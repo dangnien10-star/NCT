@@ -294,27 +294,17 @@ drawStars();
 
 
 // ===== LỜI TỎ TÌNH =====
-const message = `Tiên à... 🌙💗
+const message = `Em à ... 🌙💗
 
-Chúc cậu ngày 20/10 thật vui vẻ, luôn xinh đẹp, bình an và được yêu thương thật nhiều.
+Chúc mừng 20/10 nhóc nhỏ ❤️🌷
 
-Tớ mong mỗi ngày của Tiên đều có thật nhiều niềm vui, những điều may mắn và những người chân thành ở bên cạnh. Mong cậu luôn mỉm cười, kể cả những ngày mọi thứ không được như ý muốn.
+Chúc em luôn vui vẻ, xinh đẹp và gặp nhiều điều tốt đẹp trong cuộc sống. Cảm ơn em đã đến bên anh, cho anh những niềm vui và cảm giác hạnh phúc từ những điều nhỏ bé nhất.
 
-Có một điều tớ đã muốn nói với cậu từ lâu...
+Anh biết đôi khi mình chưa đủ tinh tế, chưa hiểu hết những điều em nghĩ, nhưng anh sẽ cố gắng để yêu thương em tốt hơn mỗi ngày. Anh mong chúng mình sẽ luôn thấu hiểu, quan tâm và cùng nhau đi qua thật nhiều ngày tháng phía trước.
 
-Cậu là một người rất đặc biệt đối với tớ. Tớ thích cảm giác được trò chuyện cùng cậu, thích những điều nhỏ bé khiến tớ nhớ đến cậu, và thích cả việc chỉ cần nghĩ đến cậu thôi cũng khiến một ngày bình thường trở nên đáng yêu hơn. 💕
+Ngày hôm nay, anh chỉ muốn em biết rằng anh rất thương em, trân trọng em và thật lòng muốn có em bên cạnh thật lâu. Mong em luôn hạnh phúc, và anh cũng mong mình sẽ là một phần trong hạnh phúc ấy.
 
-Tớ không biết liệu cậu có cảm nhận giống tớ hay không, nhưng tớ muốn thành thật rằng...
-
-TỚ THÍCH CẬU, NGUYỄN CẨM TIÊN. 💗
-
-Tớ không mong cậu phải trả lời ngay, cũng không muốn khiến cậu cảm thấy áp lực. Tớ chỉ muốn cậu biết rằng có một người thật lòng quan tâm đến cậu, mong cậu hạnh phúc và muốn được đồng hành cùng cậu trong những ngày sắp tới.
-
-Nếu cậu đồng ý, tớ mong chúng ta sẽ có cơ hội viết tiếp một câu chuyện thật đẹp, bằng sự chân thành, quan tâm và những điều giản dị nhất.
-
-Chúc mừng ngày 20/10, cô gái đặc biệt của tớ! 🌷
-
-Mong nụ cười của Tiên luôn rực rỡ như những vì sao đêm nay. Và mong một ngày nào đó, tớ có thể trực tiếp nói với cậu những lời này. ✨`;
+Thương em nhiều, Tiên nhé. ❤️`;
 
 const openBtn = document.getElementById("openBtn");
 const letter = document.getElementById("letter");
