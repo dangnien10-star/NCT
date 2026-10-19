@@ -304,7 +304,7 @@ Anh biết đôi khi mình chưa đủ tinh tế, chưa hiểu hết những đi
 
 Ngày hôm nay, anh chỉ muốn em biết rằng anh rất thương em, trân trọng em và thật lòng muốn có em bên cạnh thật lâu. Mong em luôn hạnh phúc, và anh cũng mong mình sẽ là một phần trong hạnh phúc ấy.
 
-Thương em nhiều, em nhé. ❤️`;
+Thương em nhiều. ❤️`;
 
 const openBtn = document.getElementById("openBtn");
 const letter = document.getElementById("letter");
@@ -315,7 +315,7 @@ openBtn.addEventListener("click", () => {
   if (opened) return;
 
   opened = true;
-  openBtn.textContent = "💖 Gửi Tiên thật nhiều yêu thương";
+  openBtn.textContent = "💖 Gửi em thật nhiều yêu thương";
   letter.classList.add("show");
 
   let i = 0;
@@ -330,7 +330,7 @@ openBtn.addEventListener("click", () => {
       const sign = document.createElement("div");
       sign.className = "signature";
       sign.textContent =
-        "— Gửi em, Người Già của em 💗";
+        "— Người Già của em 💗";
 
       letter.appendChild(sign);
     }
