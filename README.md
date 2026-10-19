@@ -228,7 +228,7 @@ button:active {
     </button>
 
     <div class="status" id="status">
-      Có một điều bí mật tớ muốn nói với Tiên...
+      Có một điều bí mật anh muốn nói với em...
     </div>
 
     <section id="letter"></section>
@@ -296,7 +296,7 @@ drawStars();
 // ===== LỜI TỎ TÌNH =====
 const message = `Em à ... 🌙💗
 
-Chúc mừng 20/10 nhóc nhỏ ❤️🌷
+Chúc mừng 20/10 Nhóc nhỏ ❤️🌷
 
 Chúc em luôn vui vẻ, xinh đẹp và gặp nhiều điều tốt đẹp trong cuộc sống. Cảm ơn em đã đến bên anh, cho anh những niềm vui và cảm giác hạnh phúc từ những điều nhỏ bé nhất.
 
