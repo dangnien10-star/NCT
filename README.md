@@ -208,10 +208,10 @@ button:active {
 
     <p class="intro">
       Giữa hàng triệu vì sao trên bầu trời,
-      có một ngôi sao đặc biệt mà tớ luôn muốn
+      có một ngôi sao đặc biệt mà anh luôn muốn
       dành những điều dịu dàng nhất. 🌙💗
       <br><br>
-      Chúc Tiên ngày 20/10 thật vui vẻ,
+      Chúc em ngày 20/10 thật vui vẻ,
       xinh đẹp và luôn ngập tràn hạnh phúc!
     </p>
 
@@ -294,7 +294,7 @@ drawStars();
 
 
 // ===== LỜI TỎ TÌNH =====
-const message = `Em à ... 🌙💗
+const message = `Nhóc à ... 🌙💗
 
 Chúc mừng 20/10 Nhóc nhỏ ❤️🌷
 
@@ -304,7 +304,7 @@ Anh biết đôi khi mình chưa đủ tinh tế, chưa hiểu hết những đi
 
 Ngày hôm nay, anh chỉ muốn em biết rằng anh rất thương em, trân trọng em và thật lòng muốn có em bên cạnh thật lâu. Mong em luôn hạnh phúc, và anh cũng mong mình sẽ là một phần trong hạnh phúc ấy.
 
-Thương em nhiều, Tiên nhé. ❤️`;
+Thương em nhiều, em nhé. ❤️`;
 
 const openBtn = document.getElementById("openBtn");
 const letter = document.getElementById("letter");
