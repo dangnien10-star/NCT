@@ -465,6 +465,27 @@ document.getElementById("musicBtn")
       status.textContent = "Nhạc đã tạm dừng.";
     }
   });
+
+  <audio id="bgMusic" loop>
+  <source src="say-yes.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="playMusic()">
+  🎵 Nghe nhạc cùng Tiên
+</button>
+
+<script>
+  function playMusic() {
+    const music = document.getElementById("bgMusic");
+
+    if (music.paused) {
+      music.play().catch(error => {
+        alert("Không phát được nhạc. Hãy kiểm tra file MP3 nhé!");
+      });
+    } else {
+      music.pause();
+    }
+  }
 </script>
 
 </body>
