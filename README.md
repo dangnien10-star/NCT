@@ -371,100 +371,26 @@ setInterval(() => {
 // Không cần file nhạc bên ngoài.
 // Trình duyệt chỉ phát sau khi người xem bấm nút.
 
-let audioCtx = null;
-let master = null;
-let musicOn = false;
-let musicTimer = null;
-let noteIndex = 0;
+<audio id="bgMusic" loop>
+  <source src="Say Yes (Vietnamese Version).mp3" type="audio/mpeg">
+</audio>
 
-const melody = [
-  261.63, 329.63, 392, 329.63,
-  293.66, 349.23, 440, 392,
-  261.63, 329.63, 392, 523.25,
-  440, 392, 329.63, 293.66
-];
+<button onclick="playMusic()">
+  🎵 Nghe nhạc cùng Tiên
+</button>
 
-function playNote(freq, time, duration) {
-  const osc = audioCtx.createOscillator();
-  const gain = audioCtx.createGain();
+<script>
+  function playMusic() {
+    const music = document.getElementById("bgMusic");
 
-  osc.type = "sine";
-  osc.frequency.setValueAtTime(freq, time);
-
-  gain.gain.setValueAtTime(.0001, time);
-  gain.gain.exponentialRampToValueAtTime(.05, time + .08);
-  gain.gain.exponentialRampToValueAtTime(
-    .0001,
-    time + duration
-  );
-
-  osc.connect(gain);
-  gain.connect(master);
-
-  osc.start(time);
-  osc.stop(time + duration + .03);
-}
-
-function playMelody() {
-  if (!musicOn) return;
-
-  const now = audioCtx.currentTime;
-  const note = melody[noteIndex % melody.length];
-
-  playNote(note, now, .8);
-
-  if (noteIndex % 4 === 0) {
-    playNote(note / 2, now, 1.2);
-  }
-
-  noteIndex++;
-
-  musicTimer = setTimeout(playMelody, 650);
-}
-
-document.getElementById("Say Yes (Vietnamese Version).mp3")
-  .addEventListener("click", async () => {
-    const btn = document.getElementById("Say Yes (Vietnamese Version).mp3");
-    const status = document.getElementById("status");
-
-    if (!audioCtx) {
-      audioCtx = new (
-        window.AudioContext ||
-        window.webkitAudioContext
-      )();
-
-      master = audioCtx.createGain();
-      master.gain.value = .55;
-      master.connect(audioCtx.destination);
-    }
-
-    if (audioCtx.state === "suspended") {
-      await audioCtx.resume();
-    }
-
-    musicOn = !musicOn;
-
-    if (musicOn) {
-      master.gain.setTargetAtTime(
-        .55, audioCtx.currentTime, .1
-      );
-
-      playMelody();
-
-      btn.textContent = "Ⅱ Tắt nhạc nền";
-      status.textContent =
-        "Đang phát giai điệu dịu dàng ✨";
+    if (music.paused) {
+      music.play().catch(error => {
+        alert("Không phát được nhạc. Hãy kiểm tra file MP3 nhé!");
+      });
     } else {
-      clearTimeout(musicTimer);
-
-      master.gain.setTargetAtTime(
-        .0001, audioCtx.currentTime, .05
-      );
-
-      btn.textContent = "♫ Bật nhạc nền";
-      status.textContent = "Nhạc đã tạm dừng.";
+      music.pause();
     }
-  });
+  }
 </script>
 
 </body>
