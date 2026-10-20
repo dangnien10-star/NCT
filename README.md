@@ -366,6 +366,7 @@ setInterval(() => {
   if (Math.random() > .35) makeHeart();
 }, 1200);
 
+  
 // Trình duyệt chỉ phát sau khi người xem bấm nút.
 
 <audio id="bgMusic" loop>
