@@ -366,9 +366,6 @@ setInterval(() => {
   if (Math.random() > .35) makeHeart();
 }, 1200);
 
-
-// ===== NHẠC NỀN TỰ TẠO =====
-// Không cần file nhạc bên ngoài.
 // Trình duyệt chỉ phát sau khi người xem bấm nút.
 
 <audio id="bgMusic" loop>
