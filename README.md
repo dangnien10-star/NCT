@@ -485,7 +485,7 @@ document.getElementById("musicBtn")
     } else {
       music.pause();
     }
-  }
+  };
 </script>
 
 </body>
