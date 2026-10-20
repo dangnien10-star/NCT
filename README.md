@@ -422,9 +422,9 @@ function playMelody() {
   musicTimer = setTimeout(playMelody, 650);
 }
 
-document.getElementById("musicBtn")
+document.getElementById("Say Yes (Vietnamese Version).mp3")
   .addEventListener("click", async () => {
-    const btn = document.getElementById("musicBtn");
+    const btn = document.getElementById("Say Yes (Vietnamese Version).mp3");
     const status = document.getElementById("status");
 
     if (!audioCtx) {
