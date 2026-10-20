@@ -465,7 +465,6 @@ document.getElementById("musicBtn")
       status.textContent = "Nhạc đã tạm dừng.";
     }
   });
-
 </script>
 
 </body>
